@@ -150,7 +150,7 @@ href{
 
     img{
     
-    max-width:100%;
+    max-width:95%;
     
     }
     
@@ -178,7 +178,7 @@ href{
 
       }
     #thumbs li img {
-            border: 5px solid rgba(0, 0, 0, 0);
+            border: 4px solid rgba(0, 0, 0, 0);
             z-index: 100;
             transition: transform 0.25s ease-in-out;
             -moz-transition: -moz-transform 0.25s ease-in-out;
