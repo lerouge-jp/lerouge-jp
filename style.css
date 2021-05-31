@@ -91,6 +91,7 @@ figcaption{
 h1,h2,p{
     line-height: 1;
       max-width:100%;
+      margin-left: 10px;
     }
 
 html {
@@ -157,13 +158,15 @@ href{
             list-style: none outside none; 
             padding: 0;
             max-width: 100%;
+            margin-left: 90px;
+            margin-right: 5px;
           }
-          
+    
     #thumbs li {
             margin-left: 10px;
-            margin-right: 10px;
+            margin-right: 8px;
             position: relative;
-            width: 500px;
+            width: 448px;
             height: 750px;
             z-index: 10;
             max-width: 100%;
@@ -221,6 +224,8 @@ html   { box-sizing: border-box;
   padding: 0 8px;
   max-width: 100%;
 }
+
+
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -368,6 +373,8 @@ html   { box-sizing: border-box;
   max-width: 100%;
   max-height: 100%;
 }
+
+
 * {
     box-sizing: border-box;
   }
@@ -432,16 +439,14 @@ pre { white-space: pre-wrap; }
     display: flex;
     flex-wrap: wrap;
     font-size: 30px;
-
   }
   
   .flex-item-left {
-    padding: 10px;
+    
     flex: 50%;
   }
   
   .flex-item-right {
-    padding: 10px;
     flex: 50%;
   }
   #wrapper {
@@ -462,10 +467,33 @@ pre { white-space: pre-wrap; }
     max-width: 100%;
     max-height: 100%;
   }
-  @media (max-width: 800px) {
-    .flex-item-right, .flex-item-left {
-      flex: 100%;
+  @media  screen and (max-width: 1000px) {
+    .div.flex-item-right, .div.flex-item-left, .div.flex-container {
+      flex: 90%;
+      margin-left: none;
+      margin-right: none;
     }
+
+    @media (max-width: 400px) {
+      .div.flex-item-right, .div.flex-item-left, .div.flex-container {
+        flex: 1;
+        margin-left: none;
+        margin-right: none;
+      }
+
+    @media (max-width: 700px) {
+      .float-right, .float-left,.column,.card  {
+        flex: none;
+        display:list-item;
+        margin-left: none;
+        margin-right: none;
+        width: 800px;
+        max-width: 100%;
+        padding-left: 1px;
+        
+      }
+
+}
   .title{
   font-size:2.5 rem;
   width: 100%;
@@ -518,8 +546,23 @@ pre { white-space: pre-wrap; }
         color: rgb(22, 21, 21);
       }
   }
-
   @media (max-width: 800px) {
+    .centered {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    @media   screen and (max-width: 400px) {
+      #text { 
+      text-align: justify;
+      font-size: x-small;
+      line-height: normal;
+      max-width: 100%;
+      margin-block: none;
+
+    }
+
+  @media  screen and (max-width: 800px) {
     .centered {
       max-width: 100%;
       max-height: 100%;
@@ -552,10 +595,14 @@ footer{
 	background-color:#555;
 	padding:8px;
 }
-@media (max-height:800px){
+@media  screen and (max-height:800px){
 	footer { position: static; }
 }
+@media  screen and (max-width:500px){
+	p,h1,h2 { font-size: xx-small;padding: 0mm;}
+  div.flex-item-left { font-size: xx-small;margin:none;padding: 0mm;
 
+}
 footer ul{
 	list-style-type:none;
 }
@@ -674,13 +721,28 @@ footer address a{
   width: 100px;
   height: 100px;
 }
-.responsive {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-}
+
 .middle > * {
   vertical-align: middle;
 }
-
+@media screen and (max-width: 900px) {
+  .img,.div.column{
+    width: 100%;
+    margin-top: 0;
+    height: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header2 {
+    font-size:0px;
+    width: 100%;
+    padding:none;
+    height:60px;
+    text-align: left;
+    max-width: 100%;
+  }
+}
+}}
+}
+}
 }
